@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; 
+    position: absolute;  
+    top: 50%;           
+    left: 50%;          
+    transform: translate(-50%, -50%); 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#confetti-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#text-center {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    z-index: 1000;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

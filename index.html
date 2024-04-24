@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRACIAS!</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="confetti-wrapper">
+        <button id="startButton">¡Comenzar Celebración!</button>
+        <div id="text-center" style="display: none;">GRACIAS POR LOS 2100!</div>
+        <canvas id="confetti" style="display: none;"></canvas>
+    </div>
+    <script src="app.js"></script>
+    <script src="globos.js"></script>
+    <script type="text/javascript">
+   
+document.getElementById('startButton').addEventListener('click', function() {
+    document.getElementById('text-center').style.display = 'block';
+    document.getElementById('confetti').style.display = 'block';
+    startConfetti();
+    startBalloons();
+});
+
+    </script>
+</body>
+</html>
